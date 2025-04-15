@@ -12,6 +12,9 @@ all: $(TARGET)
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
+test: $(TARGET)
+	./$(TARGET)
+
 clean:
 	rm -f $(TARGET)
 
